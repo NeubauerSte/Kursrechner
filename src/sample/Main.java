@@ -6,6 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/*****************************
+Name: Stefan Neubauer
+Erstellt am: 10.11.2020
+Beschreibung: Erstes JavaFX Programm mit Scenebuilder
+              Währungsrechner mit JavaFX (USD-EUR)
+ ****************************/
+
 public class Main extends Application {
 
     @Override
