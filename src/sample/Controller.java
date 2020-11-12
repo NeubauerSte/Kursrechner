@@ -2,10 +2,6 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.stage.Popup;
-import javafx.stage.PopupWindow;
-
-import java.text.DecimalFormat;
 
 /*****************************
  Name: Stefan Neubauer
@@ -20,7 +16,6 @@ public class Controller {
     @FXML private TextField txt_dollar;
 
     float dollar, euro , kurs=(float) 1.18;
-    DecimalFormat df = new DecimalFormat("#0.00");
 
     public void showMessage(){
         System.out.println("Euro Wert: "+txt_euro.getText()+"€");
@@ -33,8 +28,8 @@ public class Controller {
             dollar=euro*kurs;
         } catch (RuntimeException rte){ System.out.println("Bitte Wert in Euro eintragen!"); }
 
-        txt_dollar.setText(String.valueOf(df.format(dollar)));
-        txt_euro.setText(String.valueOf(df.format(euro)));
+        txt_dollar.setText(String.valueOf(dollar));
+        txt_euro.setText(String.valueOf(euro));
 
         showMessage();
     }
